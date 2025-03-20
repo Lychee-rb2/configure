@@ -1,5 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-command_timeout = 3000
+command_timeout = 5000
 
 format = '''
 $directory$git_branch$git_status$git_state$fill[$rust$bun$nodejs](rosewater) $memory_usage${custom.ip}$time
@@ -262,5 +262,5 @@ symbol = " "
 [custom.ip]
 command = 'rust-ip'
 format = '[$output](maroon)'
-shell = ['fish']
+shell = ['nu']
 when = true

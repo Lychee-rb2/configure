@@ -25,7 +25,21 @@ export STARSHIP_CONFIG=<当前文件夹>/starship.toml
 ## set fish config
 
 ```fish
+# macos
 cp ~/.config/fish/config.fish ~/.config/fish/config.fish.bak
 rm ~/.config/fish/config.fish
 ln -s <当前文件夹>/config.(mac|win).fish ~/.config/fish/config.fish
+```
+
+```fish
+# win
+ComSpec改为C:\msys64\usr\bin\fish.exe
+```
+
+
+## set nu config
+
+```nu
+// nu config后在nu的配置文件中添加
+source ($nu.default-config-dir | path join "<当前文件夹>/config.nu")
 ```
