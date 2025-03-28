@@ -36,10 +36,15 @@ ln -s <当前文件夹>/config.(mac|win).fish ~/.config/fish/config.fish
 ComSpec改为C:\msys64\usr\bin\fish.exe
 ```
 
-
 ## set nu config
 
 ```nu
 // nu config后在nu的配置文件中添加
 source ($nu.default-config-dir | path join "<当前文件夹>/config.nu")
+```
+
+## carapace
+
+``` nu
+brew install carapace
 ```

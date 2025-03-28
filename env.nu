@@ -17,4 +17,5 @@ if $nu.os-info.name == "windows" {
 
 source ./fnm.env.nu
 
-
+mkdir ~/.cache/carapace
+carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
