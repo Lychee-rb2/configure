@@ -48,3 +48,6 @@ source ($nu.default-config-dir | path join "<当前文件夹>/config.nu")
 ``` nu
 brew install carapace
 ```
+
+## Test
+你好
